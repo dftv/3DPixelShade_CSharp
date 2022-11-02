@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gdMlpAM7k17DfwxWPTkyuB/84lM7+S+pAWiugjoQO5iC0e8q1rgqrr36Ln1I97jAex/lEtSr9WfVb5ofVyz1yg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dany_\\Source\\SPKY\\Godot\\3DPixelShade\\3DPixelShade.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dany_\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\dany_\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.2\\microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

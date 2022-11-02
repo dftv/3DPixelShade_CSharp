@@ -1,0 +1,22 @@
+C:\Users\dany_\Área de Trabalho\Test\.mono\temp\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\dany_\Área de Trabalho\Test\.mono\temp\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\dany_\Área de Trabalho\Test\.mono\temp\obj\Debug\Test.AssemblyInfoInputs.cache
+C:\Users\dany_\Área de Trabalho\Test\.mono\temp\obj\Debug\Test.AssemblyInfo.cs
+C:\Users\dany_\Área de Trabalho\Test\.mono\temp\bin\Debug\Test.dll
+C:\Users\dany_\Área de Trabalho\Test\.mono\temp\bin\Debug\Test.pdb
+C:\Users\dany_\Área de Trabalho\Test\.mono\temp\obj\Debug\Test.dll
+C:\Users\dany_\Área de Trabalho\Test\.mono\temp\obj\Debug\Test.pdb
+F:\-=SPIKEY=-\Projetos\Godot\3DPixelShade\.mono\temp\obj\Debug\Test.csprojAssemblyReference.cache
+F:\-=SPIKEY=-\Projetos\Godot\3DPixelShade\.mono\temp\obj\Debug\Test.csproj.CoreCompileInputs.cache
+F:\-=SPIKEY=-\Projetos\Godot\3DPixelShade\.mono\temp\obj\Debug\Test.AssemblyInfoInputs.cache
+F:\-=SPIKEY=-\Projetos\Godot\3DPixelShade\.mono\temp\obj\Debug\Test.AssemblyInfo.cs
+F:\-=SPIKEY=-\Projetos\Godot\3DPixelShade\.mono\temp\obj\Debug\Test.dll
+F:\-=SPIKEY=-\Projetos\Godot\3DPixelShade\.mono\temp\obj\Debug\Test.pdb
+C:\Users\dany_\Área de Trabalho\3DPixelShade\.mono\temp\bin\Debug\Test.dll
+C:\Users\dany_\Área de Trabalho\3DPixelShade\.mono\temp\bin\Debug\Test.pdb
+C:\Users\dany_\Área de Trabalho\3DPixelShade\.mono\temp\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\dany_\Área de Trabalho\3DPixelShade\.mono\temp\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\dany_\Área de Trabalho\3DPixelShade\.mono\temp\obj\Debug\Test.AssemblyInfoInputs.cache
+C:\Users\dany_\Área de Trabalho\3DPixelShade\.mono\temp\obj\Debug\Test.AssemblyInfo.cs
+C:\Users\dany_\Área de Trabalho\3DPixelShade\.mono\temp\obj\Debug\Test.dll
+C:\Users\dany_\Área de Trabalho\3DPixelShade\.mono\temp\obj\Debug\Test.pdb

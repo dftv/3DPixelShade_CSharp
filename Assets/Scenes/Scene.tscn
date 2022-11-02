@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Models/Rotate.cs" type="Script" id=1]
+[ext_resource path="res://Assets/Scenes/Scripts/ResizeViewportContainer.cs" type="Script" id=2]
+
+[sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="BoxShape" id=1]
+
+[node name="ViewportContainer" type="ViewportContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+stretch = true
+script = ExtResource( 2 )
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 1920, 1080 )
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="Spatial" type="Spatial" parent="Viewport"]
+
+[node name="Camera" type="Camera" parent="Viewport/Spatial"]
+transform = Transform( 1, 0, 0, 0, 0.813811, 0.581129, 0, -0.581129, 0.813811, 0, 4.2603, 6.06686 )
+current = true
+fov = 75.0
+
+[node name="li1" type="OmniLight" parent="Viewport/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
+light_color = Color( 0.545098, 0.168627, 0.780392, 1 )
+light_energy = 7.0
+
+[node name="li2" type="OmniLight" parent="Viewport/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+light_color = Color( 1, 0, 0, 1 )
+light_energy = 7.0
+
+[node name="KinematicBody" type="KinematicBody" parent="Viewport/Spatial"]
+script = ExtResource( 1 )
+
+[node name="Box" type="MeshInstance" parent="Viewport/Spatial/KinematicBody"]
+mesh = SubResource( 2 )
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape" type="CollisionShape" parent="Viewport/Spatial/KinematicBody"]
+shape = SubResource( 1 )
