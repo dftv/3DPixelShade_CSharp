@@ -1,47 +1,51 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://drerwiim8g3sp"]
 
-[ext_resource path="res://Assets/Models/Rotate.cs" type="Script" id=1]
-[ext_resource path="res://Assets/Scenes/Scripts/ResizeViewportContainer.cs" type="Script" id=2]
+[ext_resource type="Script" path="res://Assets/Scenes/Scripts/ResizeViewportContainer.gd" id="1_jvfja"]
+[ext_resource type="Script" path="res://Assets/Models/Rotate.gd" id="2_2tfww"]
 
-[sub_resource type="CubeMesh" id=2]
+[sub_resource type="BoxMesh" id="2"]
 
-[sub_resource type="BoxShape" id=1]
+[sub_resource type="BoxShape3D" id="1"]
 
-[node name="ViewportContainer" type="ViewportContainer"]
+[node name="SubViewportContainer" type="SubViewportContainer"]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 stretch = true
-script = ExtResource( 2 )
+script = ExtResource("1_jvfja")
 
-[node name="Viewport" type="Viewport" parent="."]
-size = Vector2( 1920, 1080 )
+[node name="SubViewport" type="SubViewport" parent="."]
 transparent_bg = true
 handle_input_locally = false
-render_target_update_mode = 3
+scaling_3d_scale = 0.25
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
 
-[node name="Spatial" type="Spatial" parent="Viewport"]
+[node name="Node3D" type="Node3D" parent="SubViewport"]
 
-[node name="Camera" type="Camera" parent="Viewport/Spatial"]
-transform = Transform( 1, 0, 0, 0, 0.813811, 0.581129, 0, -0.581129, 0.813811, 0, 4.2603, 6.06686 )
+[node name="Camera3D" type="Camera3D" parent="SubViewport/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 0.813811, 0.581129, 0, -0.581129, 0.813811, 0, 4.2603, 6.06686)
 current = true
-fov = 75.0
+fov = 50.0
 
-[node name="li1" type="OmniLight" parent="Viewport/Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
-light_color = Color( 0.545098, 0.168627, 0.780392, 1 )
+[node name="li1" type="OmniLight3D" parent="SubViewport/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, 2)
+light_color = Color(0, 0, 1, 1)
 light_energy = 7.0
 
-[node name="li2" type="OmniLight" parent="Viewport/Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
-light_color = Color( 1, 0, 0, 1 )
+[node name="li2" type="OmniLight3D" parent="SubViewport/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 2)
+light_color = Color(1, 0, 0, 1)
 light_energy = 7.0
 
-[node name="KinematicBody" type="KinematicBody" parent="Viewport/Spatial"]
-script = ExtResource( 1 )
+[node name="CharacterBody3D" type="CharacterBody3D" parent="SubViewport/Node3D"]
+script = ExtResource("2_2tfww")
 
-[node name="Box" type="MeshInstance" parent="Viewport/Spatial/KinematicBody"]
-mesh = SubResource( 2 )
+[node name="Box" type="MeshInstance3D" parent="SubViewport/Node3D/CharacterBody3D"]
+mesh = SubResource("2")
 skeleton = NodePath("../../../..")
 
-[node name="CollisionShape" type="CollisionShape" parent="Viewport/Spatial/KinematicBody"]
-shape = SubResource( 1 )
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewport/Node3D/CharacterBody3D"]
+shape = SubResource("1")

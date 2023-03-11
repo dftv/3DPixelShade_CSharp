@@ -1,0 +1,13 @@
+2a60927148abd1d33b818b535e306557
+::res://::1678501985
+default_env.tres::Environment::135689571416617327::1678501931::0::1::::<><>::
+icon.png::CompressedTexture2D::6212676220153661845::1625200246::1678499426::1::::<><>::
+::res://Assets/::1678501971
+::res://Assets/Models/::1678501971
+player.obj::Mesh::6755447368237154923::1642904988::1678499434::1::::<><>::
+Rotate.gd::GDScript::-1::1678501829::0::1::::<>CharacterBody3D<>::
+Toon.tres::StandardMaterial3D::-1::1678499403::0::1::::<><>::
+::res://Assets/Scenes/::1678501969
+Scene.tscn::PackedScene::8361801813419859875::1678501931::0::1::::<><>::res://Assets/Scenes/Rotate.gd<>res://Assets/Scenes/ResizeViewportContainer.gd
+::res://Assets/Scenes/Scripts/::1678501966
+ResizeViewportContainer.gd::GDScript::-1::1678501715::0::1::::<>SubViewportContainer<>::
